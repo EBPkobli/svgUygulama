@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAF CSS ANİMASYONU</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class = "gunes">
+	</div>
+	<div class="yazi2">
+	RKAN
+	</div>
+	<div class="topContainer">
+	<div id="duzTop">
+	</div>
+	</div>
+
+
+	<div class="container">
+
+		<div class="ilk_set">
+			<div class="yTop"></div>
+			<div class="yTop"></div>
+		
+		</div>
+		<div class="ikinci_set">
+			<div class="yTop"></div>
+			<div class="yTop"></div>
+		</div>
+		
+	
+
+	</div>
+
+	<div class="yazi">
+		<h1> UMUT </h1>
+	</div>
+<svg>
+	<defs>
+		<filter id="goo">
+			<feGaussianBlur stdDeviation="10" in="sourceGraphic" result="blur">
+			</feGaussianBlur>
+			<feColorMatrix mode="matrix" in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 14 -8" result="goo" ></feColorMatrix>
+			<feBlend in="blur" in2="goo"></feBlend>
+		</filter>
+		
+		<filter id="goo2">
+			<feGaussianBlur stdDeviation="10" in="sourceGraphic" result="blur">
+			</feGaussianBlur>
+			<feBlend in="blur" in2="goo2"></feBlend>
+		</filter>
+		
+		<filter id="goo3">
+		<feSpecularLighting result="spotlight" specularConstant="1.5"
+          specularExponent="80" lighting-color="#FFF">
+        <fePointLight x="0" y="0" z="1000"/>
+		</feSpecularLighting>
+		<feComposite in="SourceGraphic" in2="spotlight" operator="arithmetic"
+          k1="0" k2="1" k3="1" k4="0"/>
+		</filter>
+	</defs>
+</svg>
+
+</body>
+</html>
